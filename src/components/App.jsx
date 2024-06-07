@@ -13,7 +13,7 @@ export class App extends Component {
 
   countPositiveFeedbackPercentage = total => {
     const percentage = (this.state.good / total) * 100;
-    return isNaN(percentage) ? 0 : percentage.toFixed(0);
+    return isNaN(percentage) ? '0' : percentage.toFixed(0);
   };
 
   countTotaFeedback = () => {
